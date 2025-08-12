@@ -10,17 +10,15 @@ import com.mbblab3.entity.Employee;
 
 import jakarta.transaction.Transactional;
 
-
 @Service
 @Transactional
-public class MBBLabService implements MBBLabServiceInterface{
-	
+public class MBBLabService implements MBBLabServiceInterface {
+
 	@Autowired
 	private MBBLabDAOInterface mDao;
 
 	@Override
 	public List<Employee> findAllEmployee() {
-		// TODO Auto-generated method stub
 		return mDao.findAll();
 	}
 
